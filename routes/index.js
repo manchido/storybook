@@ -8,7 +8,7 @@ const Story = require('../models/Story')
 //GET /
 
 router.get('/', ensureGuest, (req, res) => {
-    res.render('login', {
+    res.render('/layouts/login', {
         layout: 'login',
     } )
 })
