@@ -13,6 +13,8 @@ const MongoStore = require('connect-mongo')
 // Load config
 dotenv.config({ path: './config/config.env'})
 
+mongoose.set('strictQuery', false);
+
 // Passport config
 require('./config/passport')(passport)
 connectDB()
